@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <style>
+        header h1 {
+            text-align: center;
+        }
+
+        form .title h4 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        form .form-group {
+            display: block;
+            width: 100%;
+        }
+
+        form .form-group label {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+        form .form-group input,
+        form .form-group select {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        footer {
+            padding: 20px 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Formulário de cadastro
+        </h1>
+    </header>
+    <main>
+        <form action="submit">
+            <div class="rendered-form">
+                <div class="title">
+                    <h4>
+                        Aluno
+                    </h4>
+                </div>
+                <div class="formbuilder-text form-group field-name">
+                    <label for="name" class="formbuilder-text-label">Nome<span class="formbuilder-required">*</span></label>
+                    <input type="text" placeholder="Fulano de Tal..." class="form-control" name="name" access="false" id="name" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-email">
+                    <label for="email" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
+                    <input type="email" placeholder="fulano@fulano.com" class="form-control" name="email" access="false" id="email" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-celular">
+                    <label for="celular" class="formbuilder-text-label">Celular<span class="formbuilder-required">*</span></label>
+                    <input type="tel" placeholder="(99) 9999-99999" class="form-control" name="celular" access="false" id="celular" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-telefone">
+                    <label for="telefone" class="formbuilder-text-label">Telefone</label>
+                    <input type="tel" placeholder="(99) 9999-99999" class="form-control" name="telefone" access="false" id="telefone">
+                </div>
+                <div class="formbuilder-select form-group field-select-1631674377629">
+                    <label for="select-1631674377629" class="formbuilder-select-label">Etnia<span class="formbuilder-required">*</span></label>
+                    <select class="form-control" name="select-1631674377629" id="select-1631674377629" required="required" aria-required="true">
+                        <option disabled="null" selected="null">Selecione...</option>
+                        <option value="Branco" id="select-1631674377629-0">Branco</option>
+                        <option value="Negro" id="select-1631674377629-1">Negro</option>
+                        <option value="Pardo" id="select-1631674377629-2">Pardo</option>
+                        <option value="Amarelo" id="select-1631674377629-3">Amarelo</option>
+                        <option value="Indigena" id="select-1631674377629-4">Indigena</option>
+                    </select>
+                </div>
+                <div class="title">
+                    <h4>
+                        Endereço
+                    </h4>
+                </div>
+                <div class="formbuilder-text form-group field-cep">
+                    <label for="cep" class="formbuilder-text-label">CEP</label>
+                    <input type="text" placeholder="00000-000" class="form-control" name="cep" access="false" maxlength="9" id="cep">
+                </div>
+                <div class="formbuilder-text form-group field-endereco">
+                    <label for="endereco" class="formbuilder-text-label">Endereço</label>
+                    <input type="text" class="form-control" name="endereco" access="false" id="endereco">
+                </div>
+                <div class="formbuilder-text form-group field-numero">
+                    <label for="numero" class="formbuilder-text-label">Numero</label>
+                    <input type="tel" class="form-control" name="numero" access="false" id="numero">
+                </div>
+                <div class="formbuilder-text form-group field-bairro">
+                    <label for="bairro" class="formbuilder-text-label">Bairro</label>
+                    <input type="text" class="form-control" name="bairro" access="false" id="bairro">
+                </div>
+                <div class="formbuilder-text form-group field-cidade">
+                    <label for="cidade" class="formbuilder-text-label">Cidade</label>
+                    <input type="text" class="form-control" name="cidade" access="false" id="cidade">
+                </div>
+                <div class="formbuilder-text form-group field-estado">
+                    <label for="estado" class="formbuilder-text-label">Estado</label>
+                    <input type="text" class="form-control" name="estado" access="false" id="estado">
+                </div>
+            </div>
+            <div class="rendered-form">
+                <div class="title">
+                    <h4>
+                        Pai
+                    </h4>
+                </div>
+                <div class="formbuilder-text form-group field-nome-pai">
+                    <label for="nome-pai" class="formbuilder-text-label">Nome<span class="formbuilder-required">*</span></label>
+                    <input type="text" class="form-control" name="nome-pai" access="false" id="nome-pai" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-celular">
+                    <label for="pai-celular" class="formbuilder-text-label">Celular<span class="formbuilder-required">*</span></label>
+                    <input type="tel" class="form-control" name="pai-celular" access="false" id="celular" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-pai-email">
+                    <label for="pai-email" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
+                    <input type="email" class="form-control" name="pai-email" access="false" id="pai-email" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-cpf-pai">
+                    <label for="cpf-pai" class="formbuilder-text-label">CPF<span class="formbuilder-required">*</span></label>
+                    <input type="text" placeholder="000.000.000-00" class="form-control" name="cpf-pai" access="false" maxlength="11" id="cpf-pai" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-data-pai">
+                    <label for="data-pai" class="formbuilder-text-label">Data de Nascimento</label>
+                    <input type="text" class="form-control" name="data-pai" access="false" id="data-pai">
+                </div>
+                <div class="formbuilder-text form-group field-pai-naturalidade">
+                    <label for="pai-naturalidade" class="formbuilder-text-label">Naturalidade</label>
+                    <input type="text" class="form-control" name="pai-naturalidade" access="false" id="pai-naturalidade">
+                </div>
+                <div class="formbuilder-text form-group field-instrucao">
+                    <label for="pai-instrucao" class="formbuilder-text-label">Instrução</label>
+                    <input type="pai-text" class="form-control" name="pai-instrucao" access="false" id="instrucao">
+                </div>
+                <div class="formbuilder-text form-group field-profissao">
+                    <label for="profissao" class="formbuilder-text-label">Profissão</label>
+                    <input type="text" class="form-control" name="-pai-profissao" access="false" id="profissao">
+                </div>
+                <div class="formbuilder-select form-group field-pai-responsavel">
+                    <label for="pai-responsavel" class="formbuilder-select-label">Responsável Financeiro?</label>
+                    <select class="form-control" name="pai-responsavel" id="pai-responsavel">
+                        <option value="sim" selected="true" id="pai-responsavel-0">sim</option>
+                        <option value="nao" id="pai-responsavel-1">não</option>
+                        <option value="option-3" id="pai-responsavel-2">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rendered-form">
+                <div class="title">
+                    <h4>
+                        Mãe
+                    </h4>
+                </div>
+                <div class="formbuilder-text form-group field-nome-pai">
+                    <label for="nome-pai" class="formbuilder-text-label">Nome<span class="formbuilder-required">*</span></label>
+                    <input type="text" class="form-control" name="nome-pai" access="false" id="nome-pai" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-celular">
+                    <label for="celular" class="formbuilder-text-label">Celular<span class="formbuilder-required">*</span></label>
+                    <input type="text" class="form-control" name="celular" access="false" id="celular" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-pai-email">
+                    <label for="pai-email" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
+                    <input type="text" class="form-control" name="pai-email" access="false" id="pai-email" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-cpf-pai">
+                    <label for="cpf-pai" class="formbuilder-text-label">CPF<span class="formbuilder-required">*</span></label>
+                    <input type="text" placeholder="000.000.000-00" class="form-control" name="cpf-pai" access="false" maxlength="11" id="cpf-pai" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-data-pai">
+                    <label for="data-pai" class="formbuilder-text-label">Data de Nascimento</label>
+                    <input type="text" class="form-control" name="data-pai" access="false" id="data-pai">
+                </div>
+                <div class="formbuilder-text form-group field-pai-naturalidade">
+                    <label for="pai-naturalidade" class="formbuilder-text-label">Naturalidade</label>
+                    <input type="text" class="form-control" name="pai-naturalidade" access="false" id="pai-naturalidade">
+                </div>
+                <div class="formbuilder-text form-group field-instrucao">
+                    <label for="instrucao" class="formbuilder-text-label">Instrução</label>
+                    <input type="text" class="form-control" name="instrucao" access="false" id="instrucao">
+                </div>
+                <div class="formbuilder-text form-group field-profissao">
+                    <label for="profissao" class="formbuilder-text-label">Profissão</label>
+                    <input type="text" class="form-control" name="profissao" access="false" id="profissao">
+                </div>
+                <div class="formbuilder-select form-group field-pai-responsavel">
+                    <label for="pai-responsavel" class="formbuilder-select-label">Responsável Financeiro?</label>
+                    <select class="form-control" name="pai-responsavel" id="pai-responsavel">
+                        <option value="sim" selected="true" id="pai-responsavel-0">sim</option>
+                        <option value="nao" id="pai-responsavel-1">não</option>
+                        <option value="option-3" id="pai-responsavel-2">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rendered-form">
+                <div class="title">
+                    <h4>
+                        Pagamento
+                    </h4>
+                </div>
+                <div class="formbuilder-select form-group field-select-cursos">
+                    <label for="select-cursos" class="formbuilder-select-label">Cursos<span class="formbuilder-required">*</span></label>
+                    <select class="form-control" name="select-cursos" id="select-cursos" required="required" aria-required="true">
+                        <option disabled="null" selected="null">Selecione o curso...</option>
+                        <option value="html" id="select-cursos-0">HTML5</option>
+                        <option value="css" id="select-cursos-1">CSS3</option>
+                        <option value="js" id="select-cursos-2">JavaScript</option>
+                    </select>
+                </div>
+                <div class="formbuilder-text form-group field-data-ingresso">
+                    <label for="data-ingresso" class="formbuilder-text-label">Data de ingresso<span class="formbuilder-required">*</span></label>
+                    <input type="text" class="form-control" name="data-ingresso" access="false" id="data-ingresso" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-text form-group field-valor">
+                    <label for="valor" class="formbuilder-text-label">Valor<span class="formbuilder-required">*</span></label>
+                    <input disabled type="text" class="form-control" name="valor" access="false" value="R$ 19,99" id="valor" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-select form-group field-pagamento">
+                    <label for="pagamento" class="formbuilder-select-label">Forma de Pagamento<span class="formbuilder-required">*</span></label>
+                    <select class="form-control" name="pagamento" id="pagamento" required="required" aria-required="true">
+                        <option value="1" selected="true" id="pagamento-0">à vista</option>
+                        <option value="2" id="pagamento-1">2x</option>
+                        <option value="3" id="pagamento-2">3x</option>
+                        <option value="4" id="pagamento-3">4x</option>
+                        <option value="5" id="pagamento-4">5x</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; Gabriel de Pádua - Todos os Direitos Reservados
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.primary {
+  color: #fff !important;
+  background-color: #337ab7 !important;
+  margin-bottom: 0 !important;
+}
+
+.section {
+  margin-bottom: 50px !important;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+ 
+.jumbotron {
+  margin-bottom: 0 !important;
+  background-color: #007bff !important;
+  color: #fff;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.panel-body {
+  padding: 0 !important;
+}
+
+.panel-body img {
+  max-height: 170px;
+  min-height: 170px;
+}
+
+.primary-text {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.success-text {
+  color: #3c763d;
+  font-weight: bold;
+}
+
+.danger-text {
+  color: #a94442;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+package lista2;
+
+import java.util.Scanner;
+
+public class exercicio03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double notas;
+		double soma = 0;
+		double media;
+		int i;
+		
+		for(i = 0; i < 3; i++) {
+			System.out.println("Digite a nota " + (i + 1) + " do aluno");
+			notas = sc.nextDouble();
+			
+			soma += notas;
+		}
+		
+		media = soma / i;
+		
+		System.out.println("A media do aluno é: " + media);
+		
+		if(media >= 7) {
+			System.out.println("APROVADO");
+		} else {
+			System.out.println("REPROVADO");
+		}
+
+	}
+
+}

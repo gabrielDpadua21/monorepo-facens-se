@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600574618 source:/home/gabrieldpadua/studyspace/cursos/data-structs/exercices/exercicio8-gabriel-de-padua/main.c
+	<stdio.h>
+	<stdlib.h>
+

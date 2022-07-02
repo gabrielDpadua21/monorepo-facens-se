@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="courses_array">
+        <item>ADS</item>
+        <item>Jogo Digitais</item>
+        <item>Engenharia da computação</item>
+        <item>Engenharia de Produção</item>
+        <item>Ciencia de Dados</item>
+    </string-array>
+</resources>

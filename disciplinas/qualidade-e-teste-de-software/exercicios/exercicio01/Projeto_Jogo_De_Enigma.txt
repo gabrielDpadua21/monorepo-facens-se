@@ -1,0 +1,43 @@
+VISÃO DO PRODUTO: Para quem gosta de jogos multiusuários oS Jogos de Adivinhação e Enigma tem o objetivo de entreter, "rankiar" os vencedores para trazer diversão em bares e restaurantes para vender produtos (comida e bebidas).
+
+
+USER STORIES
+US1: EU COMO Adm QUERO avaliar os jogos PARA manter a veracidade das informações e o jogo válido.
+
+BEHAVIOR DRIVEN DEVELOPMENT
+
+BDD 1
+
+Funcionalidade: Avaliando os resultados de um Jogo
+
+Cenario 1: Avaliando um resultado valido para o jogo
+
+Dado um resultado valido
+Quando o jogo está acontecendo
+E o resultado é anotado
+Então o resultado deve ser aceito
+
+Cenario 2: Avaliando um resultado invalido para o jogo
+
+Dado um resultado invalido de <valor> e do Particicpante <nomeParticipante>
+Quando o jogo está acontecendo 
+E o resultado é anotado
+Então o resultado não deve ser aceito
+
+Cenário 3: Avaliação vários resultados para o Jogo
+
+Dado um Jogo Acontecendo
+Quando existe dois resultados
+E de participates diferentes
+Então O jogo é considerado valido
+
+Cenário 4: Avaliando resultados de um participante
+
+Dado um Jogo Acontecendo
+E um Participante
+Quando anotar dois ou mais resultados deste participante
+Então o segundo resultado deve ser ignorado
+
+
+
+

@@ -1,0 +1,194 @@
+---
+title: "Compilados de funções estátisticas"
+output: html_notebook
+---
+
+### Básico
+
+Variáveis
+
+```{r}
+a <- 10
+
+b <- 20
+
+a + b # Soma 
+```
+
+### Analise
+
+```{r}
+library('MASS')
+
+summary(Cars93)
+
+hist(Cars93$Price)
+```
+
+### Gráficos
+
+Gráfico de barras
+
+```{r}
+library("MASS") 
+
+barplot(
+  table(Cars93$Type), 
+  ylim=c(0,25), 
+  xlab="Tipos de veículos", 
+  ylab="Frequência", 
+  axis.lty = "solid", 
+  space = .05, 
+  col = "orange", 
+  main = "Gráfico de barras") 
+```
+
+
+```{r}
+#install.packages("ggplot")
+library("MASS")
+library(ggplot2)
+
+ggplot(Cars93) +
+  aes(x = Type) + 
+  geom_bar()
+```
+
+Boxplot
+
+```{r}
+library('MASS')
+library(ggplot2)
+
+ggplot(Cars93) +
+  aes(x = Type) +
+  geom_boxplot()
+```
+
+Pizza
+
+```{r}
+library("MASS")
+
+pie(table(Cars93$Type))
+```
+
+Dispersão
+
+```{r}
+library("MASS")
+
+plot(
+  Cars93$Horsepower, 
+  Cars93$MPG.city,
+  pch = as.character(Cars93$Cylinders)
+)
+abline(lm(Cars93$MPG.city~Cars93$Horsepower), col="red") # Linha de regressao
+```
+
+
+### Medidas de tendencia central
+
+```{r}
+# MEDIA
+altura <- c(1.50, 1.62, 1.72, 1.80, 1.85)
+mean(altura)
+
+
+#MEDIANA
+valores <- c(12.7, 3.4, 4.2, 18.2, 54, -21, 8, -5)
+median.result = median(valores)
+median.result
+
+#MODA
+getmode <- function(v) {
+  uniqv <- unique(v)
+  uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
+v <- c(2, 1, 2, 3, 1, 2, 3, 4, 1, 5, 5, 3, 2, 3)
+
+getmode(v)
+```
+
+### Curva normal
+
+```{r}
+
+x <- rnorm(1000) |>
+   density() |>
+   plot()
+
+```
+
+
+```{r}
+
+x <- rnorm(1000, 33, 5)
+
+plot(density(x))
+
+```
+
+### Desvio padrão
+
+```{r}
+
+mean(x)
+sd(x)
+
+```
+
+
+### Combinação
+
+```{r}
+
+choose(60, 6)
+
+```
+
+### Regressão linear
+
+```{r}
+install.packages("tidyr")
+## Regressao linear - introducao
+
+## Equacao Y = B0 + B1x
+
+## Exemplo = -307,68 + 30 * Temp -> previsao do valor de vendas em determinada temperatura
+library(ggplot2) 
+library(tidyr) 
+
+Temperatura <- c(19.2,21.2,16.9,20.2,23.5,27.1,24.4,30.1,28.4,23.1,27.6,22.2) 
+Vendas <- c(215,325,185,332,406,522,412,614,544,421,445,408)
+
+plot(Temperatura, Vendas)
+
+abline(lm(Vendas~Temperatura), col = "red" )
+
+lm(Vendas~Temperatura)
+
+dados <- data.frame(Temperatura, Vendas)
+
+ggplot(dados) +
+  aes(Temperatura, Vendas) +
+  geom_point() +
+  geom_smooth(method = lm, se = T)
+  labs(title = "Temperatura x Vendas", x = "Temperatura", y = "Vendas")
+
+
+regression_tannin
+
+plot(regression_tannin$tannin, regression_tannin$growth)
+abline(lm(regression_tannin$growth~regression_tannin$tannin), col = "blue")
+
+dados1 <- data.frame(regression_tannin$growth, regression_tannin$tannin)
+
+ggplot(dados1) +
+  aes(regression_tannin$growth, regression_tannin$tannin) +
+  geom_point() +
+  geom_smooth(method = lm, se = T)
+  labs(title = "Growth x Tannin")
+```
+

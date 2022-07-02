@@ -1,0 +1,42 @@
+<mat-card>
+	<mat-card-content>
+		<form>
+			<h2>
+				Calculadora de média final de disciplinas - Facens
+			</h2>
+			<mat-form-field class="full-width-input">
+				<input matInput placeholder="Nota AC1" [(ngModel)]="ac1" required name="ac1" />
+			</mat-form-field>
+			<mat-form-field class="full-width-input">
+				<input matInput placeholder="Nota AC2" [(ngModel)]="ac2" required name="ac2" />
+			</mat-form-field>
+			<mat-form-field>
+				<input matInput placeholder="Nota AG" [(ngModel)]="ag" required name="ag" />
+			</mat-form-field>
+			<mat-form-field class="full-width-input">
+				<input matInput placeholder="Nota AF" [(ngModel)]="af" required name="af" />
+			</mat-form-field>
+			<button mat-raised-button (click)="calcularNota()" color="primary">Calcular</button>
+			<button mat-raised-button (click)="limpar()i" color="warn">Limpar</button>
+		</form>
+	</mat-card-content>
+	<mat-card-footer>
+		<h2 class="average">
+			{{ nota }}
+		</h2>
+		<mat-chip-list class="mat-chip-list-stacked" arial-label="Color selection">
+			<div class="chip-center" *ngIf="isCalculate">
+				<mat-chip selected color="primary" *ngIf="isAproved">
+					<h3>
+						Aprovado
+					</h3>
+				</mat-chip>
+				<mat-chip selected color="warn" *ngIf="!isAproved">
+					<h3>
+						Reprovado
+					</h3>
+				</mat-chip>
+			</div>
+		</mat-chip-list>
+	</mat-card-footer>
+</mat-card>

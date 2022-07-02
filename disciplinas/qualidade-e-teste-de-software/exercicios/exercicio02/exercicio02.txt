@@ -1,0 +1,78 @@
+1) Analise a situação em sistema de oferta e cursos online:
+
+Um plataforma de cursos deve emitir certificado aos participantes. No entanto, os seguintes problemas foram verificados pelos usuários finais:
+
+Problema 1: O certificado foi emitido ao participante assim que o curso iniciou.
+
+Problema 2: O certificado foi emitido ao participante sem validar a regra de 75% de presença para emissão de certificado.
+
+Problema 3: O certificado foi baixado várias vezes e o correto seria ser emitido apenas uma vez, e se necessário novamente, falar com o suporte.
+
+Responda:
+
+Escreva as funcionalidades e os cenários de testes de acordo com ATDD e Agile. Iniciar com a descrição da User Story, Cenários BDD e Cenário TDD.
+
+User Story:
+Eu COMO aluno QUERO receber o certificado ao final de 75% ou mais de presença do curso PARA que possa emitir a via única do certificado.
+
+Cenarios:
+Certificado emitido com sucesso após 75% de conclusão 
+Tentativa de emissão do certificado ao inciar o curso
+Tentativa de emissão do certificado com menos de 75% de presença no curso
+Tentantiva de emitir o certificado novamente
+
+BDD's
+
+DADO que sou aluno E conclui 75% de presença no curso QUANDO solicitar a emissão do certificado ENTAO vou receber meu certificado com sucesso.
+
+DADO que sou aluno E iniciei o curso recentemente QUANDO solicitar a emissão do certificado ENTAO nao devo receber meu certificado.
+
+DADO que sou  aluno E nao atingi 75% de presença no curso QUANDO solicitar a emissão do certificado ENTAO nao devo receber meu certificado.
+
+DADO que sou aluno E ja emiti o certificado de conclusão do curso QUANDO solicitar novamente a emissão do certificado ENTAO nao devo receber meu certificado E receber uma notificação para contatar o suporte.
+
+
+2.) Um sistema apresenta a seguinte funcionalidade:
+
+2.1) O aluno pode acessar suas faltas para controle de frequência e não reprovar. O limite de falta é de 25% do total das aulas.
+
+2.2) O aluno para ser aprovado por nota, precisa apresentar nota igual ou superior a 7,0.
+
+2.3) O sistema deve mostrar se o aluno foi aprovado ou reprovado, considerando suas notas e faltas.
+
+Responda:
+
+Escreva as funcionalidades e os cenários de testes de acordo com ATDD e Agile. Iniciar com a descrição da User Story, Cenários BDD e Cenário TDD.
+
+
+User Story:
+Eu COMO aluno QUERO poder consultar minha faltas PARA saber minha frequência nas aulas.
+Eu COMO aluno QUERO saber minhas notas e faltas PARA saber se fui aprovado ou reprovado.
+
+ 
+Cenarios:
+Consultar minha frequência nas aulas
+Consultar resultado de aluno aprovado
+Consultar resultado de aluno reprovado
+
+BDD's
+
+DADO que sou aluno matriculado QUANDO solicitar a frequência nas aulas ENTAO devo receber o total de presenças e faltas.
+
+DADO que sou aluno matriculado QUANDO obtiver nota igual ou superior à 7 E presença igual ou superior à 75% ENTAO o resultado deve ser aprovado.
+
+DADO que sou aluno matriculado QUANDO obtiver nota inferior à 7 OU presença inferior à 75% ENTAO o resultado deve ser reprovado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

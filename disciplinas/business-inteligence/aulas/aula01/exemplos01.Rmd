@@ -1,0 +1,39 @@
+## Aula 1
+
+### Curva normal
+
+```{r}
+
+x <- rnorm(1000) |>
+   density() |>
+   plot()
+
+```
+
+
+```{r}
+
+x <- rnorm(1000, 33, 5)
+
+plot(density(x))
+
+```
+
+### Desvio padrão
+
+```{r}
+
+mean(x)
+sd(x)
+
+```
+
+
+### Combinação
+
+```{r}
+
+choose(60, 6)
+
+```
+

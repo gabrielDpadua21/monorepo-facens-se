@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600379755 source:/home/gabrieldpadua/studyspace/cursos/data-structs/exercices/function-ex4/main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,51 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.nav-link.active {
+  background-color: #337ab7 !important;
+  color: #fff !important;
+}
+#nav-dbda::-webkit-scrollbar {
+  display: none;
+}
+.nav-link {
+  color: #337ab7 !important;
+  font-weight: bolder;
+}
+.modal{
+  padding:0!important;
+}
+.modal-xl {
+  height: clamp(60%, 1000px, 80%);
+}
+.active.btn {
+  background: #337ab7 !important;
+}
+.prepaid .active.btn {
+  background: #337ab7 !important;
+}
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before { 
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 3.5em;
+  font-family: FontAwesome;
+  display: inline-block; 
+}
+
+.starrating > label {
+  color: #222222; 
+}
+
+
+.starrating > input:checked ~ label
+{ color: #337ab7 ; } 
+
+.starrating > input:hover ~ label
+{ color: #337ab7 ;  }
+
+
+@media (max-width: 990px) and (min-width: 768px) {
+  .modal-xl {
+    max-width: 750px!important;
+  }
+}

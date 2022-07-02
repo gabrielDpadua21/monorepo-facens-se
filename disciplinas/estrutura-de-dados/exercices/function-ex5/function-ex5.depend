@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600380193 source:/home/gabrieldpadua/studyspace/cursos/data-structs/exercices/function-ex5/main.c
+	<stdio.h>
+	<stdlib.h>
+

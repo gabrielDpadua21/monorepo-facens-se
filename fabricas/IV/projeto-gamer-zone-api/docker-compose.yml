@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    gamer_zone_database:
+        image: postgres:alpine
+        ports:
+         - "5432:5432"
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: Toor@1234
+          POSTGRES_DB: gamer_zone_db
+        volumes:
+         - games-zone-data:/var/lib/postgresql/data
+
+    gamer_zone_adminer:
+        image: adminer
+        ports:
+         - 8080:8080
+
+volumes:
+    games-zone-data:

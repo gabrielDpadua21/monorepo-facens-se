@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mycv-database:
+    image: mongo:latest
+    container_name: mycv_database
+    ports:
+      - 27017:27017
+    volumes:
+      - mycv_data_volume:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=adminmycv
+      - MONGO_INITDB_ROOT_PASSWORD=Toor1234
+      - MONGO_INITDB_DATABASE=db_mycv
+
+volumes:
+  mycv_data_volume:

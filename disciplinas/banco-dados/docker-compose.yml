@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+    mysql:
+        image: mysql:5.7.22
+        command: --innodb-use-native-aio=0
+        volumes:
+         - mysql-volume:/var/lib/mysql
+        ports:
+         - "3306:3306"
+        environment:
+         MYSQL_DATABASE: general
+         MYSQL_ROOT_PASSWORD: Toor@1234
+    
+    mssql:
+        image: "microsoft/mssql-server-linux"
+        volumes:
+         - sqlserver-volume:/var/opt/mssql
+        ports:
+         - "1433:1433"
+        environment:
+         - SA_PASSWORD=Toor@1234
+         - ACCEPT_EULA=Y
+
+    postgres:
+        image: postgres
+        ports:
+         - "5432:5432"
+        environment:
+         POSTGRES_USER: postgres
+         POSTGRES_PASSWORD: Toor@1234
+         POSTGRES_DB: general
+        volumes:
+         - postgres-volume:/data/postgres
+
+    mongodb:
+        image: mongo:4
+        ports: 
+         - "27017:27017"
+        volumes: 
+         - mongo-volume:/data/db
+        environment: 
+         MONGO_INITDB_ROOT_USERNAME: root
+         MONGO_INITDB_ROOT_PASSWORD: Toor@1234
+
+volumes:
+    postgres-volume:
+    mongo-volume:
+    mysql-volume:
+    sqlserver-volume:
