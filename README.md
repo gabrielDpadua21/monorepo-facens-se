@@ -1,4 +1,4 @@
-# Monorepo - FACENS (Engenharia de Software)
+# Monorepo - FACENS (Analise e Desenvolvimento de Sistemas)
 
 Este repositório contem todos os projetos, conteúdos desenvolvidos em aula e os projetos de TCC desenvolvidos durante o curso de Engenharia de Software e Analise e Desenvolvimento de Sistemas ministrados pelo Centro universitário FACENS.
 
