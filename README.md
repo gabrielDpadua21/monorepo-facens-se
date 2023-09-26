@@ -21,7 +21,7 @@ Termino: 2sem/2022
 
 <div align="center">
 
-<img width="80px" src="https://img.icons8.com/color/48/000000/java.png" alt="javascript" />
+<img width="80px" src="https://img.icons8.com/color/48/000000/javascript.png" alt="javascript" />
 
 <img width="80px" src="https://img.icons8.com/color/48/000000/spring-logo.png"/>
 
